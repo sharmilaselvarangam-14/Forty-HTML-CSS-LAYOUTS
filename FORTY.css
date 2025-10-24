@@ -1,0 +1,147 @@
+/* body{
+    background-image: url(https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800);
+    background-repeat: no-repeat;
+    background-position-x: right ;
+    background-position-y: bottom;
+    background-position: center;
+    height: 80vh;
+    background-size: cover;
+    
+} */
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ main{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 320px 320px 320px;
+ }
+ main>#art1{
+   background-image: url(./images/pic01.jpg);
+ }
+ main>#art2{
+   background-image: url(./images/pic02.jpg);
+   grid-column-start: span 2;
+   
+ }
+ main>#art3{
+background-image: url(./images/pic03.jpg);  
+grid-column-start: span 2;
+
+
+ }
+ main>#art4{
+   background-image: url(./images/pic04.jpg);
+ }
+ main>#art5{
+   background-image: url(./images/pic05.jpg);
+   
+ }
+main>#art6{
+   background-image: url(./images/pic06.jpg);
+   grid-column-start: span 2;
+}
+main>#art1>div{
+   background-color: #76bcd5a2;
+   height:320px;
+   transition: 2s;
+}
+main>#art1>div:hover{
+   background-color: transparent;
+}
+main>#art2>div:hover{
+   background-color: transparent;
+}
+main>#art2>div{
+   background-color: #7e76b3dd;
+   height:320px;
+   transition: 2s;
+}
+main>#art3>div{
+   background-color: #d98780b9;
+   height:320px;
+}
+main>#art3>div:hover{
+   background-color: transparent;
+}
+main>#art4>div{
+   background-color: #d0a580b3;
+      height:320px;
+      transition: 2s;
+}
+main>#art4>div:hover{
+   background-color: transparent;
+}
+main>#art5>div{
+   background-color: #8196cfb6;
+   height:320px;
+   transition: 2s;
+}
+main>#art5>div:hover{
+   background-color: transparent;
+}
+main>#art6>div{
+   background-color: #4ddb19b7;
+   height:320px;
+   transition: 2s;
+}
+main>#art6>div:hover{
+   background-color: transparent;
+}
+main>article>div{
+   display:flex;
+   align-items: center;
+   padding-left: 50px;
+   color:white;
+   /* transform: scale(2); */
+}
+/* main>article>div>div{
+   background-color: blue;
+   
+} */
+main>article>div>div>p{
+   text-transform: uppercase;
+   
+}
+main>article>div>div>h3{
+   font-size: 25px;
+   margin-bottom: 15px;
+}
+main>article>div>div>hr{
+   margin-bottom: 10px;
+   height:3px;
+   border:none;   
+   background-color: white
+   ;
+}
+@media all and (max-width:500px) {
+    main{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6,1fr);
+      height: 100vh;
+    }
+    main>#art1{
+      grid-column-start: span 2;
+    }
+     main>#art4{
+      grid-column-start: span 2;
+    }
+     main>#art5{
+      grid-column-start: span 2;
+    }
+}
+@media (min-width:501px) and (max-width:900px) {
+    body{
+        background-color: rgb(89, 125, 18);
+    }
+    h2{
+        display: block;
+    }
+    h1{
+    display: none
+    ;}
+}
